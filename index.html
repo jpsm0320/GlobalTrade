@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobalTrade | Comércio Exterior</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" stroke="#e50914" stroke-width="6"/>
+        <path d="M30 60 L50 30 L70 60 Z" fill="#e50914"/>
+        <circle cx="50" cy="65" r="5" fill="#fff"/>
+      </svg>
+      <strong>GlobalTrade</strong>
+    </div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div data-aos="fade-right">
+      <h1>Expanda sua empresa para o mundo</h1>
+      <p>Estratégia, logística e inteligência para você importar e exportar com segurança e lucro.</p>
+      <a href="#contato" class="btn">Falar com especialista</a>
+    </div>
+    <div data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec" alt="container porto navio logística global">
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section servicos-bg">
+  <div class="container">
+    <h2 data-aos="fade-up">Soluções que geram resultado</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 50px; color:#aaa;" data-aos="fade-up" data-aos-delay="100">
+      Não é só sobre importar ou exportar. É sobre fazer isso com estratégia, margem e segurança.
+    </p>
+
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <h3 style="margin-bottom:10px;">Importação Inteligente</h3>
+        <p style="color:#ddd;">Encontramos fornecedores, reduzimos custos e cuidamos de toda a burocracia pra você importar com segurança.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3 style="margin-bottom:10px;">Exportação Lucrativa</h3>
+        <p style="color:#ddd;">Expandimos seu negócio para novos mercados com estratégia e posicionamento competitivo.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3 style="margin-bottom:10px;">Logística de Alta Performance</h3>
+        <p style="color:#ddd;">Transporte internacional otimizado, com agilidade, rastreio e previsibilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section sobre-bg">
+  <div class="container">
+    <h2 data-aos="fade-up">Por que escolher a GlobalTrade?</h2>
+
+    <div class="grid" style="margin-top:50px;">
+      <div class="card" data-aos="fade-up">
+        <h3 style="margin-bottom:10px;">Visão Estratégica🎯</h3>
+        <p style="color:#ddd;">Não executamos processos, criamos estratégias que aumentam lucro e reduzem riscos em cada operação.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <h3 style="margin-bottom:10px;">Experiência Real🔥</h3>
+        <p style="color:#ddd;">Atuação prática no mercado internacional, entendendo desafios reais de empresas que querem crescer.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h3 style="margin-bottom:10px;">Atendimento Personalizado✍</h3>
+        <p style="color:#ddd;">Acompanhamento próximo, suporte contínuo e soluções personalizadas para cada cliente.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:60px; text-align:center;" data-aos="fade-up" data-aos-delay="300">
+      <p style="max-width:700px; margin:auto; color:#aaa; font-size:18px;">
+        Nossa missão é simples: transformar operações complexas em crescimento real para sua empresa no mercado global.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container">
+    <div class="contact-box">
+      <h2>Fale com um especialista</h2>
+      <p>Clique abaixo e comece agora seu processo de expansão internacional.</p>
+      <a href="#" id="whatsappDirect" class="btn">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<a href="#" id="whatsappFloat" class="whatsapp">💬</a>
+
+<footer>
+  © 2026 GlobalTrade
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+const numero = '5519981227418';
+
+const openWhats = () => {
+  window.open(`https://api.whatsapp.com/send?phone=${numero}`,'_blank');
+}
+
+document.getElementById('whatsappDirect').onclick = e => { e.preventDefault(); openWhats(); }
+document.getElementById('whatsappFloat').onclick = e => { e.preventDefault(); openWhats(); }
+</script>
+
+</body>
+</html>
